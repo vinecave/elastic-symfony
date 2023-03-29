@@ -1,0 +1,6 @@
+ongr_elasticsearch:
+  managers:
+    elastic_super:
+      index:
+        index_name: elastic_super
+        hosts: [elasticsearch:9200]

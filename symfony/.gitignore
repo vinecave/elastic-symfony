@@ -1,0 +1,9 @@
+# volumes
+var
+vendor
+
+.env
+
+# IDE setting
+## PhpStorm
+.idea

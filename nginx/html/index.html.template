@@ -17,7 +17,7 @@
     <h2>Index</h2>
     <ul>
         <li><a href="http://${NGINX_SYMFONY_SERVER_NAME}" target="_blank">Symfony</a></li>
-        <li><a href="http://localhost:${KIBANA_PORT}/app/kibana_overview/#/" target="_blank">Kibana</a></li>
+        <li><a href="http://${KIBANA_SERVERNAME}:${KIBANA_PORT}/app/kibana_overview/#/" target="_blank">Kibana</a></li>
     </ul>
 </body>
 </html>

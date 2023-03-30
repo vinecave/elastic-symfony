@@ -13,6 +13,7 @@ COPY html/index.html.template /tmp/nginx/
 
 ARG NGINX_SYMFONY_SERVER_NAME
 ARG KIBANA_PORT
+ARG KIBANA_SERVERNAME
 RUN envsubst < /tmp/nginx/index.html.template > /usr/share/nginx/html/index.html; \
     rm -fR /tmp/nginx
 

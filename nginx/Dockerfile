@@ -5,6 +5,7 @@ LABEL maintainer="Vincent Composieux <vincent.composieux@gmail.com>"
 RUN mkdir -p /etc/nginx/templates \
     mkdir -p /tmp/nginx
 
+RUN apt update
 RUN apt install bash
 RUN apt install vim
 

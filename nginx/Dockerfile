@@ -6,6 +6,7 @@ RUN mkdir -p /etc/nginx/templates \
     mkdir -p /tmp/nginx
 
 RUN apt install bash
+RUN apt install vim
 
 COPY nginx.conf /etc/nginx/
 COPY templates/* /etc/nginx/templates/

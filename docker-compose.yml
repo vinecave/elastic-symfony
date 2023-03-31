@@ -77,9 +77,10 @@ services:
             - ./logs/nginx:/var/log/nginx:cached
 
     kibana:
+        build:
+            context: ./kibana
         depends_on:
             - elasticsearch
-        image: docker.elastic.co/kibana/kibana:8.5.1
         environment:
             SERVER_NAME: "${KIBANA_SERVERNAME}"
             ELASTICSEARCH_HOSTS: http://elasticsearch:9200

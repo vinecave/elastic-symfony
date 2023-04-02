@@ -55,6 +55,7 @@ services:
             - NGINX_ENVSUBST_TEMPLATE_DIR=/etc/nginx/templates
             - NGINX_ENVSUBST_TEMPLATE_SUFFIX=.template
             - NGINX_SYMFONY_SERVER_NAME=${NGINX_SYMFONY_SERVER_NAME}
+            - KIBANA_DOMAIN=${KIBANA_DOMAIN}
         volumes:
             - ./logs/nginx:/var/log/nginx:cached
             - ./symfony:/var/www/symfony:cached
